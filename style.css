@@ -1,0 +1,23 @@
+:root{
+  --header-color:#c5baff;
+  --bcg-color:#c4d9ff;
+  --padding:20px;
+  --text-color:#fbfbfb;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: var(--bcg-color);
+}
+
+header{
+  background-color: var(--header-color);
+  padding: var(--padding);
+  color: var(--text-color);
+}
