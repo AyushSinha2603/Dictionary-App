@@ -41,7 +41,7 @@ main form{
 }
 
 
-form input[type="text"],button[type="text"]{
+form input[type="text"],button[type="submit"], .result div a{
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -68,4 +68,46 @@ footer{
   font-size: 18px;
   position: fixed;
   width: 100%;
+}
+
+.result {
+  background-color: #fdffed;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.result p{
+  margin-top: 10px;
+}
+
+.result p[class="partOfSpeech"]{
+  font-style: italic;
+  color:#808080;
+  margin-top: 2px;
+}
+
+
+.result div{
+  margin-top: 20px;
+}
+.result div a{
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.result li{
+  padding: calc(var(--padding)/6);
+  margin-left: 20px;
+}
+
+@media screen and (max-width:320px){
+  main form{
+    flex-direction: column;
+  }
+  form button[type="submit"]{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
 }
